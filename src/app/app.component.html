@@ -1,5 +1,19 @@
 <h4>Employee-Details</h4>
-<data [employeeName]="emp.ename"
-[employeeCity]="emp.ecity"
-[employeeSalary]="emp.esalary"
+<h5>Selected Employee Details</h5>
+<h5>Name:<span style="color:green">{{details.sname}}</span></h5>
+<h5>City:<span style="color:green">{{details.scity}}</span></h5>
+<h5>Salary:<span style="color:green">{{details.ssalary}}</span></h5>
+
+<data [name]="emp.ename"
+[city]="emp.ecity"
+[salary]="emp.esalary"
+(send)="getRecord($event)"
 *ngFor="let emp of employeeRecord"></data>
+<h5>Student Selected Record</h5>
+<p>Student-Id:<span style="color:red">{{ Sdetails.id}}</span></p>
+<p>Student-Name:<span style="color:red">{{ Sdetails.pname}}</span></p>
+<employee-details [studentId]="student.sid"
+[studentName]="student.sname"
+(selectStudentRecord)="getStudnetRecord($event)"
+
+*ngFor="let student of studentRecord"></employee-details>

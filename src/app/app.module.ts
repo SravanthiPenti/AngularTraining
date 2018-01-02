@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {StudentComponent} from './student.component'
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
@@ -13,8 +13,8 @@ import {DataComponent} from './custom/data.component'
   declarations: [
     AppComponent,
   
-    DataComponent
-
+    DataComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,
