@@ -9,9 +9,10 @@ import { LifecycleComponent} from './lifecycle.component';
 import {ParentComponent} from './parent.component';
 import {ChildComponent} from './child.component';
 import {EmpComponent} from './emp.component';
-import { TutorialComponent } from './tutorial/tutorial.component';
+
 import {InputChildComponent} from './inputchild.component';
 import {InputParentComponent} from './inputparent.component';
+import {Example} from './example';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import {InputParentComponent} from './inputparent.component';
     ParentComponent,
     ChildComponent,
     EmpComponent,
-    TutorialComponent,
+    Example,
+
     InputChildComponent,
     InputParentComponent
   ],
