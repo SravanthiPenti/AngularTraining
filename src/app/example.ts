@@ -2,6 +2,18 @@ import {Component} from '@angular/core';
 @Component({
 selector:'example',
 template:`<p [hidden]="!isUsed"> The sum of the Values is:{{1+1+getvalue()}}</p>
+<table border="1px">
+
+<tr>
+<td [attr.colspan]="value">Two</td>
+
+</tr>
+<tr>
+<td >Two</td>
+<td >Two</td>
+</tr>
+
+</table>
 
 <button  [ngClass]="setValue()" [ngStyle]="setStyle()">ClickHere</button>
 <button  [ngClass]="setAnother()" >ClickHere</button>
@@ -13,6 +25,7 @@ styles:[`
 .some{background-color:green;color:white}
 
 
+
 `],
 
 
@@ -21,6 +34,9 @@ export class Example{
 isUsed:boolean=true;
 someproperty=true;
 anotherproperty=true;
+value:number=2;
+name;
+
 
 getvalue()
     {

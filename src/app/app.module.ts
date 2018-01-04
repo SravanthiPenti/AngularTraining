@@ -9,6 +9,7 @@ import { LifecycleComponent} from './lifecycle.component';
 import {ParentComponent} from './parent.component';
 import {ChildComponent} from './child.component';
 import {EmpComponent} from './emp.component';
+import {PracticeComponent}  from './practice.component';
 
 import {InputChildComponent} from './inputchild.component';
 import {InputParentComponent} from './inputparent.component';
@@ -26,7 +27,7 @@ import {Example} from './example';
     ChildComponent,
     EmpComponent,
     Example,
-
+    PracticeComponent,
     InputChildComponent,
     InputParentComponent
   ],
